@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Contribute &mdash; MoilApp Documentation 4.1 documentation</title>
+      <link rel="stylesheet" href="moilapp-v4.1/static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="moilapp-v4.1/static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="moilapp-v4.1/static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="moilapp-v4.1/static/documentation_options.js"></script>
+        <script src="moilapp-v4.1/static/doctools.js"></script>
+        <script src="moilapp-v4.1/static/sphinx_highlight.js"></script>
+    <script src="moilapp-v4.1/static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API References" href="api_reference.html" />
+    <link rel="prev" title="Moilapp Installation Guide" href="installation_guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="moilapp-v4.1/static/light-moilapp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+
+<style>
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Additional styles for the form */
+  select {
+    width: 40%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+</style>
+<br>
+<!--<h3>Choice Version</h3>-->
+<form id="myForm">
+  <select name="cars" id="cars" onchange="redirectToPage()">
+    <option value="moilapp-v1">Moilapp-V1</option>
+    <option value="moilapp-v2">Moilapp-V2</option>
+    <option value="moilapp-v3">Moilapp-V3</option>
+    <option value="moilapp-v4.0">Moilapp-V4.0</option>
+    <option value="moilapp-v4.1">Moilapp-V4.1</option>
+  </select>
+</form>
+
+<script>
+  function redirectToPage() {
+    var selectedOption = document.getElementById("cars").value;
+
+    switch (selectedOption) {
+      case "moilapp-v1":
+        window.location.href = "moilapp-v1.0/v10_index.html";
+        break;
+      case "moilapp-v2":
+        window.location.href = "moilapp-v2.0/v20_index.html";
+        break;
+      case "moilapp-v3":
+        window.location.href = "moilapp-v3.0/v30_index.html";
+        break;
+      case "moilapp-v4.0":
+        window.location.href = "moilapp-v4.0/v40_index.html";
+        break;
+      case "moilapp-v4.1":
+        window.location.href = "index.html";
+        break;
+    }
+  }
+</script>
+
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="release_note.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Definition and overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_guide.html">Moilapp Installation Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="contribute.html">How to Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#github-operation">GitHub Operation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#do-fork-repository">Do Fork Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#do-clone-repository">Do Clone Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#do-to-create-virtual-environment">Do to Create Virtual Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#do-pull-request-your-project">Do Pull Request your Project</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#make-a-contribute-on-the-project">Make a Contribute on the Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">MoilApp of Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugin_extention.html">Plugin Extention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_issue.html">Troubleshooting Problems</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MoilApp Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How to Contribute</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-contribute">
+<h1>How to Contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this heading"></a></h1>
+<p style="text-align: justify;">
+
+ These instructions serve as a guide for contributing a personal repository project to MoilApp repository. The process
+ includes <b>Fork</b> the MoilApp repository, modifying the project code, and submitting a pull request to merge the changes.
+ It's essential to keep in mind that the guidelines and instructions may differ depending on MoilApp specific requirements and guidelines.</p><section id="github-operation">
+<h2>GitHub Operation<a class="headerlink" href="#github-operation" title="Permalink to this heading"></a></h2>
+<section id="do-fork-repository">
+<h3>Do Fork Repository<a class="headerlink" href="#do-fork-repository" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ To share a GitHub repository, first note its name and go to its page on GitHub. Then, click the <b>Fork</b> button in the upper
+ right corner to make a copy on your own account. Be sure to choose <b>"Copy Main Only"</b> in the confirmation windows to avoid
+ affecting the original repository and its other branches with changes or updates.</p><figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="images/1.contribute.png"><img alt="alternate text" src="images/1.contribute.png" style="width: 809.4px; height: 397.2px;" /></a>
+<figcaption>
+<p><span class="caption-text">Fork the repository</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="do-clone-repository">
+<h3>Do Clone Repository<a class="headerlink" href="#do-clone-repository" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ It is recommended for the user to create a new branch under the <b>develop</b> branch of the MoilApp repository after cloning.
+ It to prevent conflicts between their changes and updates made to the original repository. This is crucial, as it enables
+ the user to work on their modifications separately, without impacting the primary codebase.</p><figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="images/2.clone-config.png"><img alt="alternate text" src="images/2.clone-config.png" style="width: 743.4px; height: 327.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Clone the repository</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="do-to-create-virtual-environment">
+<h3>Do to Create Virtual Environment<a class="headerlink" href="#do-to-create-virtual-environment" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Once you have finished cloning the repository, you can open the project folder using Pycharm and create a virtual
+ environment configuration by pressing <b>Ctrl + ALT + S</b>. This step is necessary before installing the required library.
+ It is important to carefully follow each step below to create a local environment for your project, ensuring that the
+ application runs properly as required.</p><figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="images/3.venv-installation.png"><img alt="alternate text" src="images/3.venv-installation.png" style="width: 684.6px; height: 313.8px;" /></a>
+<figcaption>
+<p><span class="caption-text">Setting the virtual environment and installation requirements</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ By adhering to these instructions, you can guarantee that the application operates as planned and that there are no
+ inconsistencies between the application's requirements and other projects dependencies on your system. Establishing a
+ virtual environment for each project is a recommended approach that can assist you in managing dependencies more
+ efficiently and ensuring that your projects are separate from one another.</p></section>
+<section id="do-pull-request-your-project">
+<h3>Do Pull Request your Project<a class="headerlink" href="#do-pull-request-your-project" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ After pushing your modifications to the remote repository, you can initiate a pull request, asking the manager to examine
+ and merge the changes into the main branch. To create a <b>pull request</b>, carry out the following steps:
+
+ Navigate to the repository on GitHub where you pushed your branch.</p><p> - <em>Click on the “Pull Request” tab.</em></p>
+<p> - <em>Click on the “New pull request” button.</em></p>
+<p style="text-align: justify;">
+
+ To merge your changes into the main branch, choose the branch you wish to merge, examine the modifications you have made,
+ and provide any relevant feedback or explanations for your colleagues. After that, hit the "Create pull request" options.</p></section>
+</section>
+<section id="make-a-contribute-on-the-project">
+<h2>Make a Contribute on the Project<a class="headerlink" href="#make-a-contribute-on-the-project" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+Once you have completed the application process, you can begin making contributions to the project such as submitting bug report,
+fixing issues, or contributing code. Contributing to open source project, collaborate with others, and give back to the community.</p></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation_guide.html" class="btn btn-neutral float-left" title="Moilapp Installation Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api_reference.html" class="btn btn-neutral float-right" title="API References" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Perseverance Technology, Taiwan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
