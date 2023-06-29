@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operation of MoilApp &mdash; moilappv3.1 version3.1 documentation</title>
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="static/jquery.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+    <script src="static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Add-ons (plugins) Application" href="add_ons_pluginApp.html" />
+    <link rel="prev" title="Setup streaming camera" href="setup_streaming.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="static/light-moilapp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+
+<style>
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Additional styles for the form */
+  select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+</style>
+<br>
+<!--<h3>Choice Version</h3>-->
+<form id="myForm">
+  <select name="cars" id="cars" onchange="redirectToPage()">
+    <option value="moilapp-v1.0">Moilapp-V1.0</option>
+    <option value="moilapp-v2.0">Moilapp-V2.0</option>
+    <option selected="selected" value="moilapp-v3.0">Moilapp-V3.0</option>
+    <option value="moilapp-v4.0">Moilapp-V4.0</option>
+    <option value="moilapp-v4.1">Moilapp-V4.1</option>
+  </select>
+</form>
+
+<script>
+  function redirectToPage() {
+    var selectedOption = document.getElementById("cars").value;
+
+    switch (selectedOption) {
+      case "moilapp-v1.0":
+        window.location.href = "moilapp-v1.0/index.html";
+        break;
+      case "moilapp-v2.0":
+        window.location.href = "moilapp-v2.0/index.html";
+        break;
+      case "moilapp-v3.0":
+        window.location.href = "moilapp-v3.0/index.html";
+        break;
+      case "moilapp-v4.0":
+        window.location.href = "moilapp-v4.0/index.html";
+        break;
+      case "moilapp-v4.1":
+        window.location.href = "index.html";
+        break;
+    }
+  }
+</script>
+
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="definition_overview.html">Definition and overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_installation.html">Getting and installing MoilApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_streaming.html">Setup streaming camera</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Operation of MoilApp</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview-of-the-user-interface">4.1 Overview of The User Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#menu-bar">1. Menu bar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#title-application">2. Title application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-media-button">3. Source media button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rotate-button">4. Rotate button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zoom-button">5. Zoom button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#saving-button">6. Saving button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-controller">7. Plugin controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#information-label">8. Information label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#selection-mode-view">9. Selection mode view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#help-button">10. Help button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clear-media-from-widget">11. Clear media from widget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extra-button">12. Extra button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#widget-show-result-image">13. Widget show result image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#widget-to-show-image-saved">14. Widget to show Image saved</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-controller">15. Video controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#widget-show-original-image">16. Widget show original image</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#open-media-source">4.2 Open media source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#process-to-anypoint-view">4.3 Process to Anypoint view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#process-to-panorama-view">4.4 Process to panorama view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#save-image-and-record-video">4.5 Save image and record video</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-save-image">a. Save image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-record-video">b. Record video</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#camera-parameters">4.6 Camera parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-add-camera-parameters">a. Add camera parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-modify-camera-parameters">b. Modify camera parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-delete-camera-parameters">c. Delete camera parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#mouse-event-action">4.7 Mouse event action</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-mouse-click-event">a. Mouse click event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-mouse-press-move-event">b. Mouse press-move event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-double-click-event">c. Double click event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-right-click-event">d. Right click event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-wheel-event">e. Wheel event</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#moilapp-keyboard-shortcut">4.8 MoilApp keyboard shortcut</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_ons_pluginApp.html">Add-ons (plugins) Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_pluginApp.html">Create your own plugins Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_debianpkg.html">Debian package Distribution</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">moilappv3.1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Operation of MoilApp</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="operation-of-moilapp">
+<h1>Operation of MoilApp<a class="headerlink" href="#operation-of-moilapp" title="Permalink to this heading"></a></h1>
+<p>In this session we will explain the components in the MoilApp application and tutorials on how to use the application.</p>
+<section id="overview-of-the-user-interface">
+<h2>4.1 Overview of The User Interface<a class="headerlink" href="#overview-of-the-user-interface" title="Permalink to this heading"></a></h2>
+<p>When you open a project in PyCharm, the default user interface looks as follows:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="images/24.Overview_user_interface_MoilApp_application.png"><img alt="alternate text" src="images/24.Overview_user_interface_MoilApp_application.png" style="width: 815.6500000000001px; height: 454.3px;" /></a>
+<figcaption>
+<p><span class="caption-text">Overview user interface MoilApp application</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Here is detail explanation:</p>
+<section id="menu-bar">
+<h3>1. Menu bar<a class="headerlink" href="#menu-bar" title="Permalink to this heading"></a></h3>
+<p>This container stores various button</p>
+<blockquote>
+<div><ul>
+<li><p>File</p>
+<p>File contains Load image, Load video, Open cam, Cam parameter, Record Video, Save Image, and Exit</p>
+</li>
+<li><p>Window</p>
+<p>Window contains Maximize and Minimize</p>
+</li>
+<li><p>Apps</p>
+<p>Apps contains Add, Open, Delete, Create and Help for Add-Ons</p>
+</li>
+<li><p>Help</p>
+<p>Help contains About Apps, About Us and Accessibility</p>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="title-application">
+<h3>2. Title application<a class="headerlink" href="#title-application" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ This part will give you information about the application name and information about image and video location as a source.</p></section>
+<section id="source-media-button">
+<h3>3. Source media button<a class="headerlink" href="#source-media-button" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ This grub contains three buttons: load image, load video and open camera. You can load images and videos from your directory
+ and also can get images from your camera by streaming video. On open camera you can use USB Camera and streaming camera.</p></section>
+<section id="rotate-button">
+<h3>4. Rotate button<a class="headerlink" href="#rotate-button" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Rotate image to the clockwise and anticlockwise direction.</p></section>
+<section id="zoom-button">
+<h3>5. Zoom button<a class="headerlink" href="#zoom-button" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Make the image look bigger or smaller by zoom in and zoom out.</p></section>
+<section id="saving-button">
+<h3>6. Saving button<a class="headerlink" href="#saving-button" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Save the resulting image or recording video in your local directory </p></section>
+<section id="plugin-controller">
+<h3>7. Plugin controller<a class="headerlink" href="#plugin-controller" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ The container Plugin controller contains several buttons that have functions to control plugins such as adding, opening and removing plugin
+ application from the main application.</p></section>
+<section id="information-label">
+<h3>8. Information label<a class="headerlink" href="#information-label" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Show the information of the camera type used.</p></section>
+<section id="selection-mode-view">
+<h3>9. Selection mode view<a class="headerlink" href="#selection-mode-view" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ This container contains several view mode selection buttons including original view, Anypoint view and panoramic view.</p></section>
+<section id="help-button">
+<h3>10. Help button<a class="headerlink" href="#help-button" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Contains several buttons that display information from this application such as manual guide, about us and about MoilApp.</p></section>
+<section id="clear-media-from-widget">
+<h3>11. Clear media from widget<a class="headerlink" href="#clear-media-from-widget" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ This button will remove all objects such as pixmap images and others from the user interface to make the application look like it was just opened. </p></section>
+<section id="extra-button">
+<h3>12. Extra button<a class="headerlink" href="#extra-button" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ This button will be active when you select Anypoint or panorama view and help you to explore the image.</p></section>
+<section id="widget-show-result-image">
+<h3>13. Widget show result image<a class="headerlink" href="#widget-show-result-image" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ This widget will be showing the result image after processing, this is the main image viewer on the user interface application. </p></section>
+<section id="widget-to-show-image-saved">
+<h3>14. Widget to show Image saved<a class="headerlink" href="#widget-to-show-image-saved" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Displaying images successfully saved which can then be reopened if your source media is video or camera.</p></section>
+<section id="video-controller">
+<h3>15. Video controller<a class="headerlink" href="#video-controller" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ The video controller container contains several buttons and labels that function to control media such as start, pause, stop, forward,
+ backward, time slider and duration label. </p></section>
+<section id="widget-show-original-image">
+<h3>16. Widget show original image<a class="headerlink" href="#widget-show-original-image" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ This widget serves to display and maintain the original image to provide a reference regarding the process that occurs.</p></section>
+</section>
+<section id="open-media-source">
+<h2>4.2 Open media source<a class="headerlink" href="#open-media-source" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ MoilApp provides various sources that can be used for processing, including image files, video files, and cameras both USB cams,
+ web cams or streaming cams from raspberry-pi. You only need to press the button according to the media source that you will process
+ and the app will open a file explorer dialog like shown below. </p><figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="images/25.Open_Image.png"><img alt="alternate text" src="images/25.Open_Image.png" style="width: 666.0500000000001px; height: 378.95000000000005px;" /></a>
+<figcaption>
+<p><span class="caption-text">Open Image</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ If you open a video file, you will be asked to choose the type of camera used at the combo box prompt after select file.
+ This is useful for loading the camera parameters from the database. </p><figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="images/26.Load_Video_file.png"><img alt="alternate text" src="images/26.Load_Video_file.png" style="width: 649.25px; height: 368.54999999999995px;" /></a>
+<figcaption>
+<p><span class="caption-text">Load Video file</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ To open the camera, there are options, namely usb cam and streaming cam. for USB cameras, you can detect the port to find out which
+ port is used and then select it in the combo box, click button “oke” and you will be asked to choose the type of camera used at the
+ combo box prompt. as shown in the image below. </p><figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="images/27.Open_USB_camera.png"><img alt="alternate text" src="images/27.Open_USB_camera.png" style="width: 624.5px; height: 332.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Open USB camera</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ streaming cam option is to open camera from stream server URL which is usually used to access raspberry-pi camera. you only need to provide
+ the URL of the camera and press button “oke” like the example below. you will be asked to choose the type of camera used at the combo box prompt.<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="images/28.Open_streaming_camera.png"><img alt="alternate text" src="images/28.Open_streaming_camera.png" style="width: 628.6500000000001px; height: 352.55px;" /></a>
+<figcaption>
+<p><span class="caption-text">Open streaming camera</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If everything goes properly, the user interface will display the image as shown below.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="images/29.image_frame_shown_on_MoilApp.png"><img alt="alternate text" src="images/29.image_frame_shown_on_MoilApp.png" style="width: 649.5999999999999px; height: 368.9px;" /></a>
+<figcaption>
+<p><span class="caption-text">image frame shown on MoilApp</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ For media from video and camera we provide controllers such as play, pause, stop, forward, backward and slider timer. where this controller can be used to facilitate image processing.</p></section>
+<section id="process-to-anypoint-view">
+<h2>4.3 Process to Anypoint view<a class="headerlink" href="#process-to-anypoint-view" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ To improve the results of observations, sometimes we only want to see areas that have a lot of information. Therefore, we can use the undistortion rectilinear selected image method.
+ This method is convert the image plane coordinate to hemispherical coordinates, move the optical axis to the specified zenithal (alpha) and azimuthal (beta) angle [refer to section 1.2]. </p><p style="text-align: justify;">
+
+ Anypoint view has 2 modes, where mode 1 is the result rotation from betaOffset degree rotation around the Z-axis(roll) after alphaOffset degree rotation around the X-axis(pitch). Below is the example of Anypoint result mode-1.</p><figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="images/30.Anypoint_view_mode_1.png"><img alt="alternate text" src="images/30.Anypoint_view_mode_1.png" style="width: 649.25px; height: 369.25px;" /></a>
+<figcaption>
+<p><span class="caption-text">Anypoint view mode 1</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ Whereas, for mode -2 the result rotation is thetaY degree rotation around the Y-axis(yaw) after thetaX degree rotation around the X-axis(pitch). With the results of the image of this process can be seen in the following image. </p><figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="images/31.Anypoint_view_mode_2.png"><img alt="alternate text" src="images/31.Anypoint_view_mode_2.png" style="width: 649.5999999999999px; height: 368.54999999999995px;" /></a>
+<figcaption>
+<p><span class="caption-text">Anypoint view mode 2</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ When you are in Anypoint view mode, you can activate the help button which functions to change from mode 1 to mode 2 or vice versa. This help button also functions to see Anypoint result from a predetermined direction. Below is an overview of the extra button in Anypoint view mode.</p><figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="images/32.Extra_buttons_Anypoint_view.png"><img alt="alternate text" src="images/32.Extra_buttons_Anypoint_view.png" style="width: 99.0px; height: 136.79999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-text">Extra buttons Anypoint view</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="process-to-panorama-view">
+<h2>4.4 Process to panorama view<a class="headerlink" href="#process-to-panorama-view" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ As explained earlier, the panorama view may present a horizontal view in a specific immersed environment to meet the common human visual perception. The Figure below shows a diagram of transforming a fisheye image into a panoramic view. </p><figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="images/33.Diagram_transforming_panorama_image.png"><img alt="alternate text" src="images/33.Diagram_transforming_panorama_image.png" style="width: 580.8px; height: 208.2px;" /></a>
+<figcaption>
+<p><span class="caption-text">Diagram transforming panorama image</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ The image below is the result of image processing panorama view. </p><figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="images/34.Panorama_view.png"><img alt="alternate text" src="images/34.Panorama_view.png" style="width: 648.9px; height: 367.84999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-text">Panorama view</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ You can also change the values of the maximum and minimum FoV via lineedit which will only appear in this mode. The overview of the line edit can be seen in the picture below: </p><figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="images/35.Line_edit_Panorama_view.png"><img alt="alternate text" src="images/35.Line_edit_Panorama_view.png" style="width: 144.9px; height: 108.9px;" /></a>
+<figcaption>
+<p><span class="caption-text">Line edit Panorama view</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="save-image-and-record-video">
+<h2>4.5 Save image and record video<a class="headerlink" href="#save-image-and-record-video" title="Permalink to this heading"></a></h2>
+<section id="a-save-image">
+<h3>a. Save image<a class="headerlink" href="#a-save-image" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ You can save the original image or result image by pressing the save image button or by right clicking the mouse on the result image and selecting save image. at the first time you will save the image, application will open dialog to directed to choose the directory will use as storage.  </p><figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="images/36.Select_folder_to_save_file.png"><img alt="alternate text" src="images/36.Select_folder_to_save_file.png" style="width: 607.0px; height: 344.5px;" /></a>
+<figcaption>
+<p><span class="caption-text">Select folder to save file</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="images/37.File_saved.png"><img alt="alternate text" src="images/37.File_saved.png" style="width: 649.25px; height: 369.59999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-text">File saved</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="b-record-video">
+<h3>b. Record video<a class="headerlink" href="#b-record-video" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ If you want to record a video you can press the record button, the process is almost the same as saving an image.
+ Before starting recording, you will be directed to choose a directory and the video files will be saved in that folder. </p></section>
+</section>
+<section id="camera-parameters">
+<h2>4.6 Camera parameters<a class="headerlink" href="#camera-parameters" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ Camera parameter is a very important component in fisheye image processing. Each fisheye camera can be calibrated and
+ derives a set of parameters by MOIL laboratory before the successive functions can work correctly, configuration is necessary
+ at the beginning of the program. MoilApp provides a form dialog that can add, modify, and delete parameters that will be stored in the database.
+ To be able to use this feature, please click on File >> Camera Parameters. The overview of this form shown like picture below: </p><figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="images/38.Camera_parameters_form.png"><img alt="alternate text" src="images/38.Camera_parameters_form.png" style="width: 359.79999999999995px; height: 373.79999999999995px;" /></a>
+<figcaption>
+<p><span class="caption-text">Camera parameters form</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ If you want to see the parameter, you can list the camera type from comboBox list parameter, and will display like figure below: </p><figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="images/39.Show_camera_parameters.png"><img alt="alternate text" src="images/39.Show_camera_parameters.png" style="width: 359.09999999999997px; height: 373.09999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-text">Show camera parameters</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The following is the use of this feature in detail</p>
+<section id="a-add-camera-parameters">
+<h3>a. Add camera parameters<a class="headerlink" href="#a-add-camera-parameters" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ If you are using a camera whose parameters are not yet available in the database, you can add them. you just need to write all the parameters on the form, then click the "new" button. after that the data will be saved and you can use the camera parameters.</p><figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="images/parameters.png"><img alt="alternate text" src="images/parameters.png" style="width: 645.6px; height: 330.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">New parameters saved</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="images/41.New_parameters_saved.png"><img alt="alternate text" src="images/41.New_parameters_saved.png" style="width: 309.0px; height: 321.59999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="b-modify-camera-parameters">
+<h3>b. Modify camera parameters<a class="headerlink" href="#b-modify-camera-parameters" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ If you want to change the value of the parameter, you can modify it. select the camera type in the list parameter combobox,
+ then you enter the new parameter value. click the update button and the modified parameters will be saved in the database. </p><figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="images/modify.png"><img alt="alternate text" src="images/modify.png" style="width: 645.6px; height: 343.2px;" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="c-delete-camera-parameters">
+<h3>c. Delete camera parameters<a class="headerlink" href="#c-delete-camera-parameters" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ You can also delete parameters by pressing the delete button on the selected parameter list.</p><figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="images/43.Delete_camera_parameters.png"><img alt="alternate text" src="images/43.Delete_camera_parameters.png" style="width: 341.25px; height: 350.35px;" /></a>
+<figcaption>
+<p><span class="caption-text">Delete camera parameters</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="mouse-event-action">
+<h2>4.7 Mouse event action<a class="headerlink" href="#mouse-event-action" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ There are several functions of the mouse event that you can use to speed up work. The mouse event will only work on the result image and the original image of the user interface widget. Some of the mouse event's functions including: </p><section id="a-mouse-click-event">
+<h3>a. Mouse click event<a class="headerlink" href="#a-mouse-click-event" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Mouse click event works only on the original image widget when Anypoint mode. This handy determine the coordinates of points that will be converted to alpha beta value. which then this value will be a parameter in converting the original image to Anypoint image.</p></section>
+<section id="b-mouse-press-move-event">
+<h3>b. Mouse press-move event<a class="headerlink" href="#b-mouse-press-move-event" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ The mouse press event has its own function in each image widget, in the original image this widget works in Anypoint mode which allows for surrounding views. Different functions if you press the press-move mouse event on the result image widget, you can enlarge the area you are
+ interested in using this function and its work in all mode view, for the example shown in the image below: </p><figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="images/44.Mouse_Pres-move_event.png"><img alt="alternate text" src="images/44.Mouse_Pres-move_event.png" style="width: 646.8000000000001px; height: 366.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-text">Mouse Pres-move event</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="images/45.Enlarge_view_selected_area.png"><img alt="alternate text" src="images/45.Enlarge_view_selected_area.png" style="width: 647.6px; height: 367.6px;" /></a>
+<figcaption>
+<p><span class="caption-text">Enlarge view selected area</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="c-double-click-event">
+<h3>c. Double click event<a class="headerlink" href="#c-double-click-event" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ The Double click mouse event has function to reset Anypoint view to default in Anypoint mode. </p></section>
+<section id="d-right-click-event">
+<h3>d. Right click event<a class="headerlink" href="#d-right-click-event" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ If you right click on the mouse, it will display menu options like maximized, minimized, save image and show info.</p></section>
+<section id="e-wheel-event">
+<h3>e. Wheel event<a class="headerlink" href="#e-wheel-event" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Wheel event will work by pressing the ctrl key simultaneously to zoom in and zoom out images on the user interface display. </p></section>
+</section>
+<section id="moilapp-keyboard-shortcut">
+<h2>4.8 MoilApp keyboard shortcut<a class="headerlink" href="#moilapp-keyboard-shortcut" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ MoilApp has keyboard shortcuts for most of its commands related to processing and other tasks. Memorizing these hotkeys can help you stay more productive
+ by keeping your hands on the keyboard. The following table lists some of the most useful shortcuts to learn: </p></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="setup_streaming.html" class="btn btn-neutral float-left" title="Setup streaming camera" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="add_ons_pluginApp.html" class="btn btn-neutral float-right" title="Add-ons (plugins) Application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Perseverance Technology, Taiwan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

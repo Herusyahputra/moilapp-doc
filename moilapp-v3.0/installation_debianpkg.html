@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debian package Distribution &mdash; moilappv3.1 version3.1 documentation</title>
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="static/jquery.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+    <script src="static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Create your own plugins Application" href="create_pluginApp.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="static/light-moilapp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+
+<style>
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Additional styles for the form */
+  select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+</style>
+<br>
+<!--<h3>Choice Version</h3>-->
+<form id="myForm">
+  <select name="cars" id="cars" onchange="redirectToPage()">
+    <option value="moilapp-v1.0">Moilapp-V1.0</option>
+    <option value="moilapp-v2.0">Moilapp-V2.0</option>
+    <option selected="selected" value="moilapp-v3.0">Moilapp-V3.0</option>
+    <option value="moilapp-v4.0">Moilapp-V4.0</option>
+    <option value="moilapp-v4.1">Moilapp-V4.1</option>
+  </select>
+</form>
+
+<script>
+  function redirectToPage() {
+    var selectedOption = document.getElementById("cars").value;
+
+    switch (selectedOption) {
+      case "moilapp-v1.0":
+        window.location.href = "moilapp-v1.0/index.html";
+        break;
+      case "moilapp-v2.0":
+        window.location.href = "moilapp-v2.0/index.html";
+        break;
+      case "moilapp-v3.0":
+        window.location.href = "moilapp-v3.0/index.html";
+        break;
+      case "moilapp-v4.0":
+        window.location.href = "moilapp-v4.0/index.html";
+        break;
+      case "moilapp-v4.1":
+        window.location.href = "index.html";
+        break;
+    }
+  }
+</script>
+
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="definition_overview.html">Definition and overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_installation.html">Getting and installing MoilApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_streaming.html">Setup streaming camera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operation_moilapp.html">Operation of MoilApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_ons_pluginApp.html">Add-ons (plugins) Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_pluginApp.html">Create your own plugins Application</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Debian package Distribution</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">moilappv3.1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Debian package Distribution</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="debian-package-distribution">
+<h1>Debian package Distribution<a class="headerlink" href="#debian-package-distribution" title="Permalink to this heading"></a></h1>
+<p style="text-align: justify;">
+
+ <b>Install using Debian package Distribution</b></p><p style="text-align: justify;">
+
+ The release of the MoilApp application is now available, you can easily download and install it on your computer without experiencing any difficulties.
+ In the process of packaging this application, we use the fman build system (fbs) platform where It takes the source code and turns it into a standalone executable on Windows,
+ Mac or Linux. On Linux OS, the standalone executable will be in the form of a file with a Debian package (.deb) extension. Debian packages are standard Unix ar archives that
+ include two tar archives. One archive holds the control information and another contains the installable data. </P><p style="text-align: justify;">
+
+ You can find the MoilApp installer on the GitHub release at the following link: https://github.com/MoilOrg/MoilApp/releases/tag/V.3.1.  </p><figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="images/60.MoilApp_Release.png"><img alt="alternate text" src="images/60.MoilApp_Release.png" style="width: 590.8px; height: 654.5px;" /></a>
+<figcaption>
+<p><span class="caption-text">MoilApp Release</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ <b>1. Installation guide:</b></p><p style="text-align: justify;">
+
+ Download the MoilApp.deb from release on GitHub, you can do it manually by visit the link or use command line from terminal in your Linux: </p><p style="text-align: justify;">
+
+ <b>2. Using wget</b></p><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>wget<span class="w"> </span>https://github.com/MoilOrg/MoilApp/releases/download/V.3.1/MoilApp.deb
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+ Using Curl</p><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>-L<span class="w"> </span>https://github.com/MoilOrg/MoilApp/releases/download/V.3.1/MoilApp.deb<span class="w"> </span>&gt;<span class="w"> </span>MoilApp.deb
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+ <b>2. There are two ways to install the application, that is:</b></p><ul class="simple">
+<li><p>Simply Right click on the .deb file, and choose Open With Software Install-&gt;Install.&lt;/p&gt;</p></li>
+<li><p>Alternatively, you can also install a .deb file by opening a terminal and typing:&lt;/p&gt;</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>MoilApp.deb
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+ <b>3. Uninstall the apps</b></p><p>You can easly uninstall this app using command line:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>dpkg<span class="w"> </span>--purge<span class="w"> </span>MoilApp
+
+Remove<span class="w"> </span>the<span class="w"> </span>cache
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>/opt/MoilApp
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+ <b>4. Reference</b><ol class="upperalpha simple" start="3">
+<li><p>Chuang-jan and Jan Gwo-Jen, “METHOD FOR PRESENTING FISHEYE-CAMERAMAGES,” US 7,042,508 B2, 2006.</p></li>
+</ol>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.borrowlenses.com/blog/rectilinear-fisheye-wide-angle-lens/">https://www.borrowlenses.com/blog/rectilinear-fisheye-wide-angle-lens/</a></p></li>
+<li><p><a class="reference external" href="https://build-system.fman.io/pyqt5-tutorial">https://build-system.fman.io/pyqt5-tutorial</a></p></li>
+<li><p><a class="reference external" href="https://zetcode.com/gui/pyqt5/">https://zetcode.com/gui/pyqt5/</a></p></li>
+<li><p><a class="reference external" href="https://www.tutorialspoint.com/pyqt5/index.htm">https://www.tutorialspoint.com/pyqt5/index.htm</a></p></li>
+<li><p><a class="reference external" href="https://betterprogramming.pub/speed-up-your-python-codebases-with-c-extensions-94859875eb70">https://betterprogramming.pub/speed-up-your-python-codebases-with-c-extensions-94859875eb70</a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="create_pluginApp.html" class="btn btn-neutral float-left" title="Create your own plugins Application" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Perseverance Technology, Taiwan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

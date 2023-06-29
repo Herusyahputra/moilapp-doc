@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moilapp Installation Guide &mdash; MoilApp Documentation 4.1 documentation</title>
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+    <script src="static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to Contribute" href="contribute.html" />
+    <link rel="prev" title="Definition and overview" href="Overview.html" />
+</head>
+
+<body class="wy-body-for-nav">
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+
+
+          <a href="index.html">
+
+              <img src="static/light-moilapp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+
+<style>
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Additional styles for the form */
+  select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+</style>
+<br>
+<!--<h3>Choice Version</h3>-->
+<form id="myForm">
+  <select name="cars" id="cars" onchange="redirectToPage()">
+    <option value="moilapp-v1.0">Moilapp-V1.0</option>
+    <option value="moilapp-v2.0">Moilapp-V2.0</option>
+    <option value="moilapp-v3.0">Moilapp-V3.0</option>
+    <option value="moilapp-v4.0">Moilapp-V4.0</option>
+    <option selected="selected" value="moilapp-v4.1">Moilapp-V4.1</option>
+  </select>
+</form>
+
+<script>
+  function redirectToPage() {
+    var selectedOption = document.getElementById("cars").value;
+
+    switch (selectedOption) {
+      case "moilapp-v1.0":
+        window.location.href = "moilapp-v1.0/index.html";
+        break;
+      case "moilapp-v2.0":
+        window.location.href = "moilapp-v2.0/index.html";
+        break;
+      case "moilapp-v3.0":
+        window.location.href = "moilapp-v3.0/index.html";
+        break;
+      case "moilapp-v4.0":
+        window.location.href = "moilapp-v4.0/index.html";
+        break;
+      case "moilapp-v4.1":
+        window.location.href = "index.html";
+        break;
+    }
+  }
+</script>
+
+
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="release_note.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Definition and overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="installation_guide.html">Moilapp Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#clone-this-repository">Clone this Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-working-directory">Change Working Directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-up-virtual-environment">Set up Virtual Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-the-application">Run the Application</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">MoilApp of Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugin_extention.html">Plugin Extention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_issue.html">Troubleshooting Problems</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MoilApp Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Moilapp Installation Guide</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="moilapp-installation-guide">
+<h1>Moilapp Installation Guide<a class="headerlink" href="#moilapp-installation-guide" title="Permalink to this heading"></a></h1>
+<p style="text-align: justify;">
+
+<i>This guide provides step-by-step instructions to install and run the <b>MoilApp repository</b> on <b>Ubuntu 20.04</b> with Python <b>version > 3.7.</b></i></p><section id="clone-this-repository">
+<h2>Clone this Repository<a class="headerlink" href="#clone-this-repository" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+1. Use the <i>"git clone"</i> command to <i>download</i> the code from the repository to your local machine.</p><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/McutOIL/moilapp.git<span class="w"> </span>--branch<span class="o">=</span>develop_v4.1
+</pre></div>
+</div>
+</section>
+<section id="change-working-directory">
+<h2>Change Working Directory<a class="headerlink" href="#change-working-directory" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+2. After <b>successfully</b> cloning the repository, change working directory by using the command line below and the try to
+install <b>. build.sh</b>file to install all <i>dependencies library</i>.</p><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>moilapp
+
+$<span class="w"> </span>.<span class="w"> </span>build.sh
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+<i>In case the command <b>. build.sh </b> above is installed <b>Successfully,</b> you can proceed to part <i>Run the Application</i>. Nevertheless, if the
+installation fails, you can install manually by referring to section <i>Set up Virtual Environment</i> below.</i></p></section>
+<section id="set-up-virtual-environment">
+<h2>Set up Virtual Environment<a class="headerlink" href="#set-up-virtual-environment" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+3. Two ways to build a <i>virtual environment</i> are: installing it in general or specifically for Python. Use the provided
+command to prevent installation errors and ensure that dependencies required for each project are installed without
+interfering with other projects or the system's Python installation. <i>A virtual environment</i> helps developers maintain
+project stability and avoid compatibility issues between package versions.</p><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>virtualenv
+
+$<span class="w"> </span>virtualenv<span class="w"> </span>venv
+
+or
+
+$<span class="w"> </span>python3.8<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+<i>Note: you can change the python version ex: <b>*python3.8, python3.9, python3.10</b></i></p><p style="text-align: justify;">
+
+4. To start using the virtual environment, you need to <i>activate</i> it. You can do this by running the activate script located in the `bin` directory of your virtual environment. On Linux, use the following command: </p><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+ 5. Before installation the library requirements you should be to <b>upgrade</b> an existing package <b>PIP</b> to the latest version,
+ you can use the command.</p><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+Followed by the name of the package. This command will download and install the latest version of the package,
+replacing the older version that was previously installed.</p>
+
+<p> 6. With the environment activated, you can install all required packages. The packages will be installed in the
+virtual environment and will not affect the global Python installation.</p><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+</section>
+<section id="run-the-application">
+<h2>Run the Application<a class="headerlink" href="#run-the-application" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+7. After all ready, run the main program in `src` directory, on your terminal you can type this command to run the project<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>src
+
+$<span class="w"> </span>python3<span class="w"> </span>main.py
+</pre></div>
+</div>
+<p style="text-align: justify;">
+
+<i>That's it! You should now have the <b>McutOIL/moilapp repository</b> installed and ready to use on your <b>Ubuntu 20.04 or 22.04 LTS</b> machine.</i></p></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Overview.html" class="btn btn-neutral float-left" title="Definition and overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contribute.html" class="btn btn-neutral float-right" title="How to Contribute" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Perseverance Technology, Taiwan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

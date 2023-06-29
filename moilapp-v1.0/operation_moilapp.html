@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operation Moilapp &mdash; moilappv1.0 version1.0 documentation</title>
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="static/jquery.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+    <script src="static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Code Documentations" href="4.code.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="static/light-moilapp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+
+<style>
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Additional styles for the form */
+  select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+</style>
+<br>
+<!--<h3>Choice Version</h3>-->
+<form id="myForm">
+  <select name="cars" id="cars" onchange="redirectToPage()">
+    <option selected="selected" value="moilapp-v1.0">Moilapp-V1.0</option>
+    <option value="moilapp-v2.0">Moilapp-V2.0</option>
+    <option value="moilapp-v3.0">Moilapp-V3.0</option>
+    <option value="moilapp-v4.0">Moilapp-V4.0</option>
+    <option value="moilapp-v4.1">Moilapp-V4.1</option>
+  </select>
+</form>
+
+<script>
+  function redirectToPage() {
+    var selectedOption = document.getElementById("cars").value;
+
+    switch (selectedOption) {
+      case "moilapp-v1.0":
+        window.location.href = "moilapp-v1.0/index.html";
+        break;
+      case "moilapp-v2.0":
+        window.location.href = "moilapp-v2.0/index.html";
+        break;
+      case "moilapp-v3.0":
+        window.location.href = "moilapp-v3.0/index.html";
+        break;
+      case "moilapp-v4.0":
+        window.location.href = "moilapp-v4.0/index.html";
+        break;
+      case "moilapp-v4.1":
+        window.location.href = "index.html";
+        break;
+    }
+  }
+</script>
+
+
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="definition_overview.html">Definition and Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.runing.html">How to Run or Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3.install.html">Install use Debian Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4.code.html">Code Documentations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Operation Moilapp</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#menu-bar">1. Menu bar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#file">1.1 File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view">1.2 View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#window">1.3 Window</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#help">1.4 Help</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbar">2. Toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#load-image">3. Load Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#load-video">4. Load Video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-cam">5. Open Cam</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#stream-camera">Stream Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#video-player">6. Video Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#any-point">7. Any Point</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mode-1">Mode 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mode-2">Mode 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#panorama">Panorama</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#record-video-and-save-image">Record video and save image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Help</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">moilappv1.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Operation Moilapp</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="operation-moilapp">
+<h1>Operation Moilapp<a class="headerlink" href="#operation-moilapp" title="Permalink to this heading"></a></h1>
+<section id="menu-bar">
+<h2>1. Menu bar<a class="headerlink" href="#menu-bar" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ The menu bar's purpose is to supply a common housing for window- or application-specific menus which provide access to such functions as opening files, interacting with an application, or displaying help documentation or manuals. </p><section id="file">
+<h3>1.1 File<a class="headerlink" href="#file" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>File has six features:</p></li>
+<li><p>Load Image</p></li>
+<li><p>Load Video</p></li>
+<li><p>Open Cam</p></li>
+<li><p>Close Cam</p></li>
+<li><p>Save Image</p></li>
+<li><p>Record Video</p></li>
+<li><p>Exit</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="view">
+<h3>1.2 View<a class="headerlink" href="#view" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>This menu was using to view or hide some windows</p></li>
+<li><p>Save Image box</p></li>
+<li><p>Toolbox</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="window">
+<h3>1.3 Window<a class="headerlink" href="#window" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Window menu was used for maximized and minimized result windows.</p></li>
+<li><p>Maximized</p></li>
+<li><p>Maximized was using to make result windows bigger and will hide image save window and toolbox.</p></li>
+<li><p>Minimized</p></li>
+<li><p>Minimized was using to make result windows be the default size</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="help">
+<h3>1.4 Help<a class="headerlink" href="#help" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ If a user had confused about the application, they can see the help menu. </p>
+
+ a. Current widget Lab<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<div class="legend">
+<blockquote>
+<div><ol class="loweralpha simple" start="2">
+<li><p>Current widget lab is used to provide information about the moildev application</p></li>
+</ol>
+</div></blockquote>
+</div>
+</figcaption>
+</figure>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="toolbar">
+<h2>2. Toolbar<a class="headerlink" href="#toolbar" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ Tips: If you are mising the toolba, try clicking View on the manubar. There is option where the toolbar and Image saved view can be hiden and display.</p></section>
+<section id="load-image">
+<h2>3. Load Image<a class="headerlink" href="#load-image" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ To load the image, click on “Load image” in the toolbar and choice the image and parameter of an image. </p><figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+After clicking "load image" on the toolbar. first, select the location where the image will be processed. second, select the image, and then click open for the third step. </p><figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ After inputting the image then select a parameter. First, open the directory where the image parameters are. second, select the parameters to be used. Last was clicked open. </p><figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>After all the processes are complete, a display will appear as shown on the side. Any point and panorama are still not enabled by default. the user has to choose what kind of process the user wants. &lt;/p&gt;</p>
+<p style="text-align: justify;">
+
+ Note: Make sure the parameters and images used are in the same camera. Otherwise, the process will not procees properly.</p></section>
+<section id="load-video">
+<h2>4. Load Video<a class="headerlink" href="#load-video" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ Just like load image, to load video from our directory click “load Video” in the toolbox. </p><figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ After Click the “load videos” from the directory button, then selecting the video (Fig.14) to be processed and selecting the parameters (Fig.15) used. </p><p style="text-align: justify;">
+
+ Note: Make sure the parameters and videos sed are in the same camera. otherwise, the process will not proceed properly.</p></section>
+<section id="open-cam">
+<h2>5. Open Cam<a class="headerlink" href="#open-cam" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ Moildev had two sources for cam, first from USB camera and the second was stream camera (Web camera). For open camera click Open cam in the toolbar. </p><figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>USB Camera</p></li>
+</ul>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Input from USB camera we must check the port for every camera on our computer.</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ Note: Make sure when choosing a USB camera you know the activate camera number. Each camera has a different array number. By default [0] is camera a camera that is already on laptop or computer (main camera), if you using another camera it will be [1], [2] and so on.<section id="stream-camera">
+<h3>Stream Camera<a class="headerlink" href="#stream-camera" title="Permalink to this heading"></a></h3>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Input from web camera we must input the camera link and click “OK”</p>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ Note: Make sure when choosing a web camera you know the camera link or URL. Each camera has a different link.</p></section>
+</section>
+<section id="video-player">
+<h2>6. Video Player<a class="headerlink" href="#video-player" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ Video player was using to control video from the directory or stream camera (USB camera dan WEB camera) </p><figure class="align-center" id="id18">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
+<div class="legend">
+<blockquote>
+<div><ul class="simple">
+<li><p>Rewind (rewind video for 5 seconds)</p></li>
+<li><p>Play / Pause</p></li>
+<li><p>When press the play button and will change to the pause button and turn back after that.</p></li>
+<li><p>Stop</p></li>
+<li><p>Forward (forward video for 5 seconds)</p></li>
+<li><p>Length of Video</p></li>
+</ul>
+</div></blockquote>
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="any-point">
+<h2>7. Any Point<a class="headerlink" href="#any-point" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ Any point has 2 setting parameters and a fast view. At any point, we have alpha and beta parameters. User must input of value Alpha and Beta and picture will show image depends on the parameter. Fast view had fixed alpha and beta parameters and just only click the direction apps can show the images. </p><figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ Mode 1 and mode 2 are modes that use changes in the angle of rotation of pitch, yaw, and roll. Mode 1 takes advantage of changing the pitch and roll angle. Mode 2 changes based on Raw and roll angle. </p><section id="mode-1">
+<h3>Mode 1<a class="headerlink" href="#mode-1" title="Permalink to this heading"></a></h3>
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ (a) The default setting when first-time clicks Any Point was mode 1 with alpha and beta parameters was 0O. (b) If the user clicks “up arrow” then alpha parameter will change to 75O automatically and beta still zero. (c) alpha and beta will change to 65 O and 270 O degrees if we click on the “left arrow” side. </p></section>
+<section id="mode-2">
+<h3>Mode 2<a class="headerlink" href="#mode-2" title="Permalink to this heading"></a></h3>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ (a) Mode 2 by default with alpha and beta parameters was 0O. (b) If the user clicks “Up Arrow” then alpha parameter will change to 50O automatically and beta still zero. (c) alpha and beta will change to 0O and -75 O degrees if we click on the “Left Arrow”.</p></section>
+<section id="panorama">
+<h3>Panorama<a class="headerlink" href="#panorama" title="Permalink to this heading"></a></h3>
+<figure class="align-center" id="id25">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id25" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ Panorama can be created from wide-angle images to panoramic images. Field of view (FoV) is the extent of the observable world visible at any given moment. </p><figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id26" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id27" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Panorama view changes the view from a wide view image to a panoramic view.</p>
+</section>
+<section id="record-video-and-save-image">
+<h3>Record video and save image<a class="headerlink" href="#record-video-and-save-image" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Moildev can record video and save image capture from video. To record a video, click the “rec” menu on the toolbar. </p><figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>To save the image press the save image button on the toolbar.</p>
+<figure class="align-center" id="id29">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id29" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h3>Help<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p style="text-align: justify;">
+
+ Help is used when the user needs additional information and confusing information. There are two pieces of information provided, the first is Application Help and the second is about moildev apps. </p><figure class="align-center" id="id30">
+<a class="reference internal image-reference" href="images/assets"><img alt="alternate text" src="images/assets" /></a>
+<figcaption>
+<p><span class="caption-text">Operations of the MoilApp</span><a class="headerlink" href="#id30" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="4.code.html" class="btn btn-neutral float-left" title="Code Documentations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Perseverance Technology, Taiwan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

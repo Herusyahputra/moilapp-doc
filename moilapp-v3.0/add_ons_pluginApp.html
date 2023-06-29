@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add-ons (plugins) Application &mdash; moilappv3.1 version3.1 documentation</title>
+      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="static/jquery.js"></script>
+        <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
+    <script src="static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Create your own plugins Application" href="create_pluginApp.html" />
+    <link rel="prev" title="Operation of MoilApp" href="operation_moilapp.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="static/light-moilapp.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+
+<style>
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Additional styles for the form */
+  select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+</style>
+<br>
+<!--<h3>Choice Version</h3>-->
+<form id="myForm">
+  <select name="cars" id="cars" onchange="redirectToPage()">
+    <option value="moilapp-v1.0">Moilapp-V1.0</option>
+    <option value="moilapp-v2.0">Moilapp-V2.0</option>
+    <option selected="selected" value="moilapp-v3.0">Moilapp-V3.0</option>
+    <option value="moilapp-v4.0">Moilapp-V4.0</option>
+    <option value="moilapp-v4.1">Moilapp-V4.1</option>
+  </select>
+</form>
+
+<script>
+  function redirectToPage() {
+    var selectedOption = document.getElementById("cars").value;
+
+    switch (selectedOption) {
+      case "moilapp-v1.0":
+        window.location.href = "moilapp-v1.0/index.html";
+        break;
+      case "moilapp-v2.0":
+        window.location.href = "moilapp-v2.0/index.html";
+        break;
+      case "moilapp-v3.0":
+        window.location.href = "moilapp-v3.0/index.html";
+        break;
+      case "moilapp-v4.0":
+        window.location.href = "moilapp-v4.0/index.html";
+        break;
+      case "moilapp-v4.1":
+        window.location.href = "index.html";
+        break;
+    }
+  }
+</script>
+
+
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="definition_overview.html">Definition and overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_installation.html">Getting and installing MoilApp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_streaming.html">Setup streaming camera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operation_moilapp.html">Operation of MoilApp</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Add-ons (plugins) Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#add-plugins-application">5.1 Add plugins application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-plugins-application">5.2 Open plugins application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delete-plugins-application">5.3 Delete plugins application</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="create_pluginApp.html">Create your own plugins Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_debianpkg.html">Debian package Distribution</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">moilappv3.1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Add-ons (plugins) Application</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="add-ons-plugins-application">
+<h1>Add-ons (plugins) Application<a class="headerlink" href="#add-ons-plugins-application" title="Permalink to this heading"></a></h1>
+<p style="text-align: justify;">
+
+ Because the applications are very diverse, we implement a plugin framework so that users can select apps according to their needs.
+ A plugin is a software component that adds a specific feature to an existing computer program. When a program supports plug-ins, it enables customization.
+ A plugin architecture consists of two components: a core system and plug-in modules. The main key design here is to allow adding additional features that are
+ called plugins modules to our core system, providing extensibility, flexibility, and isolation to our application features. This will provide us with the ability to
+ add, remove, and change the behavior of the application with little or no effect on the core system or other plug-in modules making our code very modular and extensible. </p><figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="images/47.Plugin_architecture.jpg"><img alt="alternate text" src="images/47.Plugin_architecture.jpg" style="width: 501.59999999999997px; height: 285.59999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-text">Plugin architecture</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p style="text-align: justify;">
+
+ The MoilApp application is designed to be able to implement this concept plugin, there is a special menu bar and button container to control the plug-in application as shown below. </p><figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="images/48.Plugin_Controller.png"><img alt="alternate text" src="images/48.Plugin_Controller.png" style="width: 607.0px; height: 339.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Plugin Controller</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="add-plugins-application">
+<h2>5.1 Add plugins application<a class="headerlink" href="#add-plugins-application" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ You can add the application plugin that you have created by pressing the (+) button or menubar apps then select add application. System will open a file explorer dialog to select a plugin folder.
+ If your application matches the format and was successfully added, then the plugin application will be available in the comboBox like shown on figure below. </p><figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="images/49.Adding_plugin_application.png"><img alt="alternate text" src="images/49.Adding_plugin_application.png" style="width: 607.6px; height: 265.2px;" /></a>
+<figcaption>
+<p><span class="caption-text">Adding plugin application</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="open-plugins-application">
+<h2>5.2 Open plugins application<a class="headerlink" href="#open-plugins-application" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ You can open a plugin that you have added by selecting it in the combo box and pressing the open plugins button. The example below is a multiple view plugin application for ADAS application. </p><figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="images/50.Open_plugin_application.png"><img alt="alternate text" src="images/50.Open_plugin_application.png" style="width: 612.15px; height: 348.48px;" /></a>
+<figcaption>
+<p><span class="caption-text">Open plugin application</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="delete-plugins-application">
+<h2>5.3 Delete plugins application<a class="headerlink" href="#delete-plugins-application" title="Permalink to this heading"></a></h2>
+<p style="text-align: justify;">
+
+ If you want to delete the application plugins, you can do it by pressing the “delete” button in plugin controller container.
+ This will open a dialog to confirm that you are sure to remove this app.
+ If the application is deleted, then the application is no longer available in the application combo box list.  </p><p>Note:</p>
+<ul class="simple">
+<li><p>If you want to create your own plugin application, you can follow the tutorial in section 6.2.</p></li>
+<li><p>Tutorial how to operate MoilApp can watch here: <a class="reference external" href="https://youtu.be/irpWmNmgAz4">https://youtu.be/irpWmNmgAz4</a></p></li>
+<li><p>Suppose you have any issue or want to contribute to this project, you can open issue in GitHub repository and you can ask for pull request</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="operation_moilapp.html" class="btn btn-neutral float-left" title="Operation of MoilApp" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="create_pluginApp.html" class="btn btn-neutral float-right" title="Create your own plugins Application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Perseverance Technology, Taiwan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
