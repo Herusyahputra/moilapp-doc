@@ -4,17 +4,17 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Models Package &mdash; MoilApp Documentation 4.1 documentation</title>
-      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <title>Models Package &mdash; MoilApp Documentation 1.0 documentation</title>
+      <link rel="stylesheet" href="v40_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="v40_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
-    <script src="static/js/html5shiv.min.js"></script>
+    <script src="v40_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
-        <script src="static/doctools.js"></script>
-        <script src="static/sphinx_highlight.js"></script>
-    <script src="static/js/theme.js"></script>
+        <script data-url_root="./" id="documentation_options" src="v40_static/documentation_options.js"></script>
+        <script src="v40_static/doctools.js"></script>
+        <script src="v40_static/sphinx_highlight.js"></script>
+    <script src="v40_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
@@ -29,7 +29,7 @@
           
           <a href="index.html">
             
-              <img src="static/light-moilapp.png" class="logo" alt="Logo"/>
+              <img src="v40_static/light-moilapp.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -46,7 +46,7 @@
 
   /* Additional styles for the form */
   select {
-    width: 40%;
+    width: 100%;
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -61,10 +61,10 @@
 <!--<h3>Choice Version</h3>-->
 <form id="myForm">
   <select name="cars" id="cars" onchange="redirectToPage()">
-    <option value="moilapp-v1">Moilapp-V1</option>
-    <option value="moilapp-v2">Moilapp-V2</option>
-    <option value="moilapp-v3">Moilapp-V3</option>
-    <option value="moilapp-v4.0">Moilapp-V4.0</option>
+    <option value="moilapp-v1.0">Moilapp-V1.0</option>
+    <option value="moilapp-v2.0">Moilapp-V2.0</option>
+    <option value="moilapp-v3.0">Moilapp-V3.0</option>
+    <option selected="selected" value="moilapp-v4.0">Moilapp-V4.0</option>
     <option value="moilapp-v4.1">Moilapp-V4.1</option>
   </select>
 </form>
@@ -74,17 +74,17 @@
     var selectedOption = document.getElementById("cars").value;
 
     switch (selectedOption) {
-      case "moilapp-v1":
-        window.location.href = "moilapp-v1.0/v10_index.html";
+      case "moilapp-v1.0":
+        window.location.href = "moilapp-v1.0/index.html";
         break;
-      case "moilapp-v2":
-        window.location.href = "moilapp-v2.0/v20_index.html";
+      case "moilapp-v2.0":
+        window.location.href = "moilapp-v2.0/index.html";
         break;
-      case "moilapp-v3":
-        window.location.href = "moilapp-v3.0/v30_index.html";
+      case "moilapp-v3.0":
+        window.location.href = "moilapp-v3.0/index.html";
         break;
       case "moilapp-v4.0":
-        window.location.href = "moilapp-v4.0/v40_index.html";
+        window.location.href = "moilapp-v4.0/index.html";
         break;
       case "moilapp-v4.1":
         window.location.href = "index.html";
@@ -92,7 +92,6 @@
     }
   }
 </script>
-
 
 
 </div>
@@ -106,7 +105,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api_reference.html">API References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">MoilApp of Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plugin_extention.html">Plugin Extention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_issue.html">Troubleshooting Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_issue.html">Troubleshooting an Issue</a></li>
 </ul>
 
         </div>
@@ -138,14 +137,14 @@
 <span id="main-models"></span><h2>Main Models<a class="headerlink" href="#module-models.model_main" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="models.model_main.Model">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">models.model_main.</span></span><span class="sig-name descname"><span class="pre">Model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">models.model_main.</span></span><span class="sig-name descname"><span class="pre">Model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MoilUtils</span></code></p>
 <p>The backend that contains all the data logic.
 The model’s job is to simply manage the data. Whether the data is from a database,
 API, or a JSON object, the model is responsible for managing it.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.theme_light_mode">
-<span class="sig-name descname"><span class="pre">theme_light_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.theme_light_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.theme_light_mode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">theme_light_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.theme_light_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.theme_light_mode" title="Permalink to this definition"></a></dt>
 <dd><p>Sets the user interface theme to light mode.</p>
 <p>Changes the <cite>theme</cite> attribute of the object to “light”,
 and returns the value of the <cite>STYLE_LIGHT_MODE</cite> constant.</p>
@@ -161,7 +160,7 @@ and returns the value of the <cite>STYLE_LIGHT_MODE</cite> constant.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.theme_dark_mode">
-<span class="sig-name descname"><span class="pre">theme_dark_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.theme_dark_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.theme_dark_mode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">theme_dark_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.theme_dark_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.theme_dark_mode" title="Permalink to this definition"></a></dt>
 <dd><p>Sets the user interface theme to dark mode.</p>
 <p>Changes the <cite>theme</cite> attribute of the object to “dark”, and returns the value of the <cite>STYLE_DARK_MODE</cite> constant.</p>
 <dl class="field-list simple">
@@ -176,7 +175,7 @@ and returns the value of the <cite>STYLE_LIGHT_MODE</cite> constant.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_pushbutton">
-<span class="sig-name descname"><span class="pre">style_pushbutton</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_pushbutton"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_pushbutton" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_pushbutton</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_pushbutton"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_pushbutton" title="Permalink to this definition"></a></dt>
 <dd><p>Generates a Qt stylesheet for QPushButton widgets based on the current theme.</p>
 <p>Returns a string representing the stylesheet to use for QPushButton widgets in the current theme. The style is
 different for “light” and “dark” themes. The returned string can be set as the style sheet of a QPushButton
@@ -193,7 +192,7 @@ widget to apply the theme.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_pushbutton_play_pause_video">
-<span class="sig-name descname"><span class="pre">style_pushbutton_play_pause_video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_pushbutton_play_pause_video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_pushbutton_play_pause_video" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_pushbutton_play_pause_video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_pushbutton_play_pause_video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_pushbutton_play_pause_video" title="Permalink to this definition"></a></dt>
 <dd><p>Generates a Qt stylesheet for QPushButton widgets based on the current theme.</p>
 <p>Returns a string representing the stylesheet to use for QPushButton widgets in the current theme. The style is
 different for “light” and “dark” themes. The returned string can be set as the style sheet of a QPushButton
@@ -210,7 +209,7 @@ widget to apply the theme.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_label">
-<span class="sig-name descname"><span class="pre">style_label</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_label"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_label" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_label</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_label"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_label" title="Permalink to this definition"></a></dt>
 <dd><p>Generates a Qt stylesheet for QLabel widgets based on the current theme.</p>
 <p>Returns a string representing the stylesheet to use for QLabel widgets in the current theme. The style is
 different for “light” and “dark” themes. The returned string can be set as the style sheet of a QLabel widget
@@ -227,7 +226,7 @@ to apply the theme.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_transparent_label">
-<span class="sig-name descname"><span class="pre">style_transparent_label</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_transparent_label"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_transparent_label" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_transparent_label</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_transparent_label"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_transparent_label" title="Permalink to this definition"></a></dt>
 <dd><p>Generates a Qt stylesheet for QLabel widgets based on the current theme.</p>
 <p>Returns a string representing the stylesheet to use for QLabel widgets in the current theme. The style is
 different for “light” and “dark” themes. The returned string can be set as the style sheet of a QLabel widget
@@ -244,7 +243,7 @@ to apply the theme.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_frame_main">
-<span class="sig-name descname"><span class="pre">style_frame_main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_frame_main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_frame_main" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_frame_main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_frame_main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_frame_main" title="Permalink to this definition"></a></dt>
 <dd><p>Generates a Qt stylesheet for QLabel widgets based on the current theme.</p>
 <p>Returns a string representing the stylesheet to use for QLabel widgets in the current theme. The style is
 different for “light” and “dark” themes. The returned string can be set as the style sheet of a QLabel widget
@@ -261,17 +260,17 @@ to apply the theme.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_font_12">
-<span class="sig-name descname"><span class="pre">style_font_12</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_font_12"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_font_12" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_font_12</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_font_12"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_font_12" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_font_14">
-<span class="sig-name descname"><span class="pre">style_font_14</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_font_14"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_font_14" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_font_14</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_font_14"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_font_14" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_frame_object">
-<span class="sig-name descname"><span class="pre">style_frame_object</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_frame_object"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_frame_object" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_frame_object</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_frame_object"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_frame_object" title="Permalink to this definition"></a></dt>
 <dd><p>Generates a Qt stylesheet for QLabel widgets based on the current theme.</p>
 <p>Returns a string representing the stylesheet to use for QLabel widgets in the current theme. The style is
 different for “light” and “dark” themes. The returned string can be set as the style sheet of a QLabel widget
@@ -288,17 +287,17 @@ to apply the theme.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.frame_transparent">
-<span class="sig-name descname"><span class="pre">frame_transparent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.frame_transparent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.frame_transparent" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">frame_transparent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.frame_transparent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.frame_transparent" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_line">
-<span class="sig-name descname"><span class="pre">style_line</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_line"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_line" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_line</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_line"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_line" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_combobox">
-<span class="sig-name descname"><span class="pre">style_combobox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_combobox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_combobox" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_combobox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_combobox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_combobox" title="Permalink to this definition"></a></dt>
 <dd><p>Returns the Qt stylesheet for a QComboBox widget, based on the current theme.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -312,37 +311,37 @@ to apply the theme.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_scroll_area">
-<span class="sig-name descname"><span class="pre">style_scroll_area</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_scroll_area"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_scroll_area" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_scroll_area</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_scroll_area"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_scroll_area" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_radio_button">
-<span class="sig-name descname"><span class="pre">style_radio_button</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_radio_button"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_radio_button" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_radio_button</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_radio_button"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_radio_button" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_slider">
-<span class="sig-name descname"><span class="pre">style_slider</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_slider"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_slider" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_slider</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_slider"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_slider" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_checkbox">
-<span class="sig-name descname"><span class="pre">style_checkbox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_checkbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_checkbox" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_checkbox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_checkbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_checkbox" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_spinbox">
-<span class="sig-name descname"><span class="pre">style_spinbox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_spinbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_spinbox" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_spinbox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_spinbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_spinbox" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_double_spin_box">
-<span class="sig-name descname"><span class="pre">style_double_spin_box</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_double_spin_box"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_double_spin_box" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_double_spin_box</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_double_spin_box"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_double_spin_box" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_main.Model.style_line_edit">
-<span class="sig-name descname"><span class="pre">style_line_edit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_main.html#Model.style_line_edit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_line_edit" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">style_line_edit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_main.html#Model.style_line_edit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_main.Model.style_line_edit" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -353,7 +352,7 @@ to apply the theme.</p>
 <p>This Class is to provide model for moilapp application. to make it not make confuse on the plugin class</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">models.model_apps.</span></span><span class="sig-name descname"><span class="pre">ModelApps</span></span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">models.model_apps.</span></span><span class="sig-name descname"><span class="pre">ModelApps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QObject</span></code></p>
 <p>Initializes an instance of the class.</p>
 <dl class="field-list simple">
@@ -979,7 +978,7 @@ arguments is the optional sequence of the names of the signal’s arguments.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.save_image_file">
-<span class="sig-name descname"><span class="pre">save_image_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst_directory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_camera</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.save_image_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.save_image_file" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">save_image_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dst_directory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_camera</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.save_image_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.save_image_file" title="Permalink to this definition"></a></dt>
 <dd><p>Save an image file to the specified directory and add metadata to the configuration view.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1000,7 +999,7 @@ arguments is the optional sequence of the names of the signal’s arguments.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.add_position_video_on_saved_image">
-<span class="sig-name descname"><span class="pre">add_position_video_on_saved_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.add_position_video_on_saved_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.add_position_video_on_saved_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_position_video_on_saved_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.add_position_video_on_saved_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.add_position_video_on_saved_image" title="Permalink to this definition"></a></dt>
 <dd><p>Adds the current position of the video to the list of positions.</p>
 <p>If there is an active video, this method appends the current position of
 the video to the list of positions stored in the <cite>__pos_video_image_saved</cite>
@@ -1010,7 +1009,7 @@ saved in the video.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.reopen_saved_image">
-<span class="sig-name descname"><span class="pre">reopen_saved_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.reopen_saved_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.reopen_saved_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">reopen_saved_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.reopen_saved_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.reopen_saved_image" title="Permalink to this definition"></a></dt>
 <dd><p>Reopen saved image file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1022,7 +1021,7 @@ saved in the video.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.set_position_frame_save_image">
-<span class="sig-name descname"><span class="pre">set_position_frame_save_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.set_position_frame_save_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_position_frame_save_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">set_position_frame_save_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.set_position_frame_save_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_position_frame_save_image" title="Permalink to this definition"></a></dt>
 <dd><p>This function sets the position of a saved frame from the <cite>Image_saved</cite> list in the configuration view.
 If the timer is active, it will be stopped and the status will be emitted. If the parent path of the saved image
 is the same as the media source, the position of the frame will be set and the next frame signal
@@ -1042,7 +1041,7 @@ will be emitted. If the parent path is different, the saved image will be reopen
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.update_file_config">
-<span class="sig-name descname"><span class="pre">update_file_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.update_file_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.update_file_config" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">update_file_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.update_file_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.update_file_config" title="Permalink to this definition"></a></dt>
 <dd><p>This function updates the configuration file located in the cached directory.
 It sets the <cite>__config_file</cite> attribute to the path of the configuration file
 and loads the configuration data into the <cite>__configuration_view</cite> attribute.
@@ -1058,7 +1057,7 @@ from the “Image_saved” dictionary in the configuration data.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.set_media_source">
-<span class="sig-name descname"><span class="pre">set_media_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cam_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">media_source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.set_media_source"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_media_source" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">set_media_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cam_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">media_source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.set_media_source"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_media_source" title="Permalink to this definition"></a></dt>
 <dd><p>Set up the media source for processing in this application.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1148,13 +1147,13 @@ from the “Image_saved” dictionary in the configuration data.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.set_width_image_on_label_result">
-<span class="sig-name descname"><span class="pre">set_width_image_on_label_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.set_width_image_on_label_result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_width_image_on_label_result" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">set_width_image_on_label_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.set_width_image_on_label_result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_width_image_on_label_result" title="Permalink to this definition"></a></dt>
 <dd><p>Sets the angle of rotation.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_original_mouse_double_click_anypoint_mode_1">
-<span class="sig-name descname"><span class="pre">label_original_mouse_double_click_anypoint_mode_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_original_mouse_double_click_anypoint_mode_1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_double_click_anypoint_mode_1" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_original_mouse_double_click_anypoint_mode_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_original_mouse_double_click_anypoint_mode_1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_double_click_anypoint_mode_1" title="Permalink to this definition"></a></dt>
 <dd><p>Handle double-click events on the original label image in Anypoint Mode 1.</p>
 <p>This function sets the Anypoint Mode 1 configuration values to their defaults and emits the <cite>alpha_beta</cite> signal with
 values <cite>[0, 0]</cite>. It then saves the new configuration to the configuration file and calls <cite>create_maps_anypoint_mode_1()</cite>
@@ -1171,7 +1170,7 @@ to update the view.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_original_mouse_double_click_anypoint_mode_2">
-<span class="sig-name descname"><span class="pre">label_original_mouse_double_click_anypoint_mode_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_original_mouse_double_click_anypoint_mode_2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_double_click_anypoint_mode_2" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_original_mouse_double_click_anypoint_mode_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_original_mouse_double_click_anypoint_mode_2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_double_click_anypoint_mode_2" title="Permalink to this definition"></a></dt>
 <dd><p>Resets the configuration view for Anypoint Mode 2 and emits alpha and beta values of [0, 0].</p>
 <p>Resets the pitch, roll, yaw, and zoom values to their default values, sets the coordinates of the view to the
 current image center, and saves the updated configuration to a file. Additionally, emits alpha and beta values
@@ -1180,12 +1179,12 @@ of [0, 0] to signal that the view has been reset.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_recenter_mouse_move_event">
-<span class="sig-name descname"><span class="pre">label_recenter_mouse_move_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_recenter_mouse_move_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_recenter_mouse_move_event" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_recenter_mouse_move_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_recenter_mouse_move_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_recenter_mouse_move_event" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_original_mouse_move_event">
-<span class="sig-name descname"><span class="pre">label_original_mouse_move_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_original_mouse_move_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_move_event" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_original_mouse_move_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_original_mouse_move_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_move_event" title="Permalink to this definition"></a></dt>
 <dd><p>Update the display and configuration in response to mouse movement.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1205,12 +1204,12 @@ of [0, 0] to signal that the view has been reset.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_recenter_mouse_leave_event">
-<span class="sig-name descname"><span class="pre">label_recenter_mouse_leave_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_recenter_mouse_leave_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_recenter_mouse_leave_event" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_recenter_mouse_leave_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_recenter_mouse_leave_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_recenter_mouse_leave_event" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_original_mouse_leave_event">
-<span class="sig-name descname"><span class="pre">label_original_mouse_leave_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_original_mouse_leave_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_leave_event" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_original_mouse_leave_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_original_mouse_leave_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_leave_event" title="Permalink to this definition"></a></dt>
 <dd><p>Handle the mouse leave event on the original image label.</p>
 <p>This method is called when the mouse leaves the original image label in the
 UI. It performs different actions depending on the current view state:
@@ -1234,12 +1233,12 @@ based on the mode and configuration.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.reset_coordinate_recenter_to_default">
-<span class="sig-name descname"><span class="pre">reset_coordinate_recenter_to_default</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.reset_coordinate_recenter_to_default"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.reset_coordinate_recenter_to_default" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">reset_coordinate_recenter_to_default</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.reset_coordinate_recenter_to_default"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.reset_coordinate_recenter_to_default" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_original_mouse_press_event_anypoint_mode_1">
-<span class="sig-name descname"><span class="pre">label_original_mouse_press_event_anypoint_mode_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_original_mouse_press_event_anypoint_mode_1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_press_event_anypoint_mode_1" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_original_mouse_press_event_anypoint_mode_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_original_mouse_press_event_anypoint_mode_1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_press_event_anypoint_mode_1" title="Permalink to this definition"></a></dt>
 <dd><p>Updates the configuration view for the first mode when a mouse press event occurs.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1256,12 +1255,12 @@ based on the mode and configuration.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_original_recenter_mode">
-<span class="sig-name descname"><span class="pre">label_original_recenter_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_original_recenter_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_recenter_mode" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_original_recenter_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_original_recenter_mode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_recenter_mode" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_original_mouse_press_event_anypoint_mode_2">
-<span class="sig-name descname"><span class="pre">label_original_mouse_press_event_anypoint_mode_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_original_mouse_press_event_anypoint_mode_2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_press_event_anypoint_mode_2" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_original_mouse_press_event_anypoint_mode_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_original_mouse_press_event_anypoint_mode_2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_press_event_anypoint_mode_2" title="Permalink to this definition"></a></dt>
 <dd><p>Update configuration for Mode 2 when clicking on original image.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1278,7 +1277,7 @@ based on the mode and configuration.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_original_mouse_press_event_panorama_car">
-<span class="sig-name descname"><span class="pre">label_original_mouse_press_event_panorama_car</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_original_mouse_press_event_panorama_car"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_press_event_panorama_car" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_original_mouse_press_event_panorama_car</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_original_mouse_press_event_panorama_car"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_original_mouse_press_event_panorama_car" title="Permalink to this definition"></a></dt>
 <dd><p>Updates the configuration of the car panorama mode with the mouse press event.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1292,19 +1291,19 @@ based on the mode and configuration.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.label_result_mouse_press_event">
-<span class="sig-name descname"><span class="pre">label_result_mouse_press_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.label_result_mouse_press_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_result_mouse_press_event" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">label_result_mouse_press_event</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.label_result_mouse_press_event"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.label_result_mouse_press_event" title="Permalink to this definition"></a></dt>
 <dd><p>Mouse press event handler for the label displaying the image result.</p>
 <p>Does nothing if <cite>self.image</cite> is <cite>None</cite>.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.mouse_press_event_handler_recenter">
-<span class="sig-name descname"><span class="pre">mouse_press_event_handler_recenter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.mouse_press_event_handler_recenter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.mouse_press_event_handler_recenter" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">mouse_press_event_handler_recenter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.mouse_press_event_handler_recenter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.mouse_press_event_handler_recenter" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_recenter_image">
-<span class="sig-name descname"><span class="pre">create_recenter_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_recenter_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_recenter_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_recenter_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_recenter_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_recenter_image" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">
@@ -1320,7 +1319,7 @@ based on the mode and configuration.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.crop_image">
-<span class="sig-name descname"><span class="pre">crop_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_ori</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.crop_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.crop_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">crop_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_ori</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.crop_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.crop_image" title="Permalink to this definition"></a></dt>
 <dd><p>Crop the image according to the selected rubberband area.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1334,7 +1333,7 @@ based on the mode and configuration.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.draw_rectangle">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">draw_rectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.draw_rectangle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_rectangle" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">draw_rectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.draw_rectangle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_rectangle" title="Permalink to this definition"></a></dt>
 <dd><p>Draw rectangle on the image.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1353,7 +1352,7 @@ based on the mode and configuration.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.convert_cv2_to_q_image">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_cv2_to_q_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.convert_cv2_to_q_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.convert_cv2_to_q_image" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_cv2_to_q_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.convert_cv2_to_q_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.convert_cv2_to_q_image" title="Permalink to this definition"></a></dt>
 <dd><p>Convert an image from OpenCV format to Qt format.
 The function takes an image in OpenCV format and returns the equivalent image in Qt format.
 The image can be grayscale, RGB or RGBA. The conversion is done by creating a <cite>QImage</cite> object and setting
@@ -1373,7 +1372,7 @@ the image data and format accordingly.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.convert_q_image_to_mat">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_q_image_to_mat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q_image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.convert_q_image_to_mat"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.convert_q_image_to_mat" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_q_image_to_mat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q_image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.convert_q_image_to_mat"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.convert_q_image_to_mat" title="Permalink to this definition"></a></dt>
 <dd><p>Converts a QImage to a NumPy array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1390,7 +1389,7 @@ the image data and format accordingly.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.set_alpha_beta">
-<span class="sig-name descname"><span class="pre">set_alpha_beta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.set_alpha_beta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_alpha_beta" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">set_alpha_beta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.set_alpha_beta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_alpha_beta" title="Permalink to this definition"></a></dt>
 <dd><p>Set the values of alpha and beta and update the configuration file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1407,7 +1406,7 @@ the image data and format accordingly.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_image_original">
-<span class="sig-name descname"><span class="pre">create_image_original</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_image_original"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_image_original" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_image_original</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_image_original"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_image_original" title="Permalink to this definition"></a></dt>
 <dd><p>This function creates the original image based on the configuration view.
 The function will check the type of media source specified in the configuration view,
 and proceed accordingly. The function can handle different types of media sources including a camera stream,
@@ -1424,7 +1423,7 @@ If the media source is an image file, the function will read the image into memo
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_image_result">
-<span class="sig-name descname"><span class="pre">create_image_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_image_result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_image_result" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_image_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_image_result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_image_result" title="Permalink to this definition"></a></dt>
 <dd><p>Create the result image based on the current view and configuration settings.</p>
 <p>If the <cite>load_saved_image</cite> flag is True, the function crops the original image based on the state of the
 <cite>state_rubberband</cite> flag. If it is False, the function checks the state of the <cite>state_recent_view</cite> flag and
@@ -1456,17 +1455,17 @@ the resulting image.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_maps_fov">
-<span class="sig-name descname"><span class="pre">create_maps_fov</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_maps_fov"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_fov" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_maps_fov</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_maps_fov"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_fov" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.draw_fov_original_image">
-<span class="sig-name descname"><span class="pre">draw_fov_original_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.draw_fov_original_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_fov_original_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">draw_fov_original_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.draw_fov_original_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_fov_original_image" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.draw_polygon_fov">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">draw_polygon_fov</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapY</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.draw_polygon_fov"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_polygon_fov" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">draw_polygon_fov</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapY</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.draw_polygon_fov"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_polygon_fov" title="Permalink to this definition"></a></dt>
 <dd><p>Return image with a drawn polygon on it from mapX and mapY generated by maps anypoint or panorama.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1493,7 +1492,7 @@ the resulting image.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.re_run_after_load_saved_image">
-<span class="sig-name descname"><span class="pre">re_run_after_load_saved_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.re_run_after_load_saved_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.re_run_after_load_saved_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">re_run_after_load_saved_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.re_run_after_load_saved_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.re_run_after_load_saved_image" title="Permalink to this definition"></a></dt>
 <dd><p>Performs necessary actions after loading a saved image, including updating the configuration file, resetting
 certain attributes, and creating the original and result images.</p>
 <dl class="field-list simple">
@@ -1505,7 +1504,7 @@ certain attributes, and creating the original and result images.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.draw_crosshair_on_center_image">
-<span class="sig-name descname"><span class="pre">draw_crosshair_on_center_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.draw_crosshair_on_center_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_crosshair_on_center_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">draw_crosshair_on_center_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.draw_crosshair_on_center_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_crosshair_on_center_image" title="Permalink to this definition"></a></dt>
 <dd><p>Draws a crosshair in the center of the currently stored image.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1516,12 +1515,12 @@ certain attributes, and creating the original and result images.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.draw_crosshair_on_the_recenter_image">
-<span class="sig-name descname"><span class="pre">draw_crosshair_on_the_recenter_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.draw_crosshair_on_the_recenter_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_crosshair_on_the_recenter_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">draw_crosshair_on_the_recenter_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.draw_crosshair_on_the_recenter_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_crosshair_on_the_recenter_image" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.draw_crosshair_on_the_original_image">
-<span class="sig-name descname"><span class="pre">draw_crosshair_on_the_original_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.draw_crosshair_on_the_original_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_crosshair_on_the_original_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">draw_crosshair_on_the_original_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.draw_crosshair_on_the_original_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.draw_crosshair_on_the_original_image" title="Permalink to this definition"></a></dt>
 <dd><p>Draws a crosshair on the specified <cite>image</cite> at a location determined by the current state of the object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1546,7 +1545,7 @@ certain attributes, and creating the original and result images.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_moildev">
-<span class="sig-name descname"><span class="pre">create_moildev</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_moildev"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_moildev" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_moildev</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_moildev"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_moildev" title="Permalink to this definition"></a></dt>
 <dd><p>Creates a connection to Moildev based on the configuration view.</p>
 <p>If the <cite>__configuration_view</cite> attribute is not <cite>None</cite>, the function checks if the <cite>Parameter_name</cite> value is not
 <cite>None</cite>. If this is the case, the function sets the <cite>parameter_name</cite> attribute to the value of
@@ -1562,17 +1561,17 @@ certain attributes, and creating the original and result images.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.recenter_image_process">
-<span class="sig-name descname"><span class="pre">recenter_image_process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.recenter_image_process"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.recenter_image_process" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">recenter_image_process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.recenter_image_process"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.recenter_image_process" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.change_coordinate_by_spinbox">
-<span class="sig-name descname"><span class="pre">change_coordinate_by_spinbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">icx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">icy</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.change_coordinate_by_spinbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.change_coordinate_by_spinbox" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_coordinate_by_spinbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">icx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">icy</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.change_coordinate_by_spinbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.change_coordinate_by_spinbox" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_maps_anypoint_mode_1">
-<span class="sig-name descname"><span class="pre">create_maps_anypoint_mode_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_maps_anypoint_mode_1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_anypoint_mode_1" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_maps_anypoint_mode_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_maps_anypoint_mode_1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_anypoint_mode_1" title="Permalink to this definition"></a></dt>
 <dd><p>Creates maps for anypoint mode 1 based on the configuration file.</p>
 <p>If the configuration file exists, the function loads the alpha, beta, and zoom values for mode 1 from the
 configuration file. It then uses the loaded values to create the maps for anypoint mode 1 using the
@@ -1587,7 +1586,7 @@ image result using the <cite>create_image_result()</cite> method.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_maps_anypoint_mode_2">
-<span class="sig-name descname"><span class="pre">create_maps_anypoint_mode_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_maps_anypoint_mode_2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_anypoint_mode_2" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_maps_anypoint_mode_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_maps_anypoint_mode_2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_anypoint_mode_2" title="Permalink to this definition"></a></dt>
 <dd><p>Creates maps for anypoint mode 2 based on the configuration file.</p>
 <p>If the configuration file exists, the function loads the pitch, yaw, roll, and zoom values for mode 2 from the
 configuration file. It then uses the loaded values to create the maps for anypoint mode 2 using the
@@ -1602,12 +1601,12 @@ image result using the <cite>create_image_result()</cite> method.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.reset_panorama_car">
-<span class="sig-name descname"><span class="pre">reset_panorama_car</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.reset_panorama_car"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.reset_panorama_car" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">reset_panorama_car</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.reset_panorama_car"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.reset_panorama_car" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_maps_panorama_car">
-<span class="sig-name descname"><span class="pre">create_maps_panorama_car</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_maps_panorama_car"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_panorama_car" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_maps_panorama_car</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_maps_panorama_car"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_panorama_car" title="Permalink to this definition"></a></dt>
 <dd><p>Create the map images for the panorama car feature.</p>
 <p>This method creates the map images for the panorama car feature using the MOIL SDK. If the configuration file exists,
 it retrieves the alpha and beta values for the car from the configuration file using the private method __load_config().
@@ -1625,7 +1624,7 @@ and beta values and sets the image result.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.create_maps_panorama_tube">
-<span class="sig-name descname"><span class="pre">create_maps_panorama_tube</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.create_maps_panorama_tube"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_panorama_tube" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">create_maps_panorama_tube</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.create_maps_panorama_tube"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.create_maps_panorama_tube" title="Permalink to this definition"></a></dt>
 <dd><p>Create the map images for the panorama tube feature.</p>
 <p>This method creates the map images for the panorama tube feature using the MOIL SDK. If the configuration file exists,
 it retrieves the minimum and maximum alpha values for the tube from the configuration file using the private method
@@ -1643,7 +1642,7 @@ feature using the alpha values and sets the image result.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.next_frame_signal">
-<span class="sig-name descname"><span class="pre">next_frame_signal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.next_frame_signal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.next_frame_signal" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">next_frame_signal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.next_frame_signal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.next_frame_signal" title="Permalink to this definition"></a></dt>
 <dd><p>Read the next frame from the video or camera and update the display.</p>
 <p>If the video capture object is not None and the video is currently playing, this method will:</p>
 <ol class="arabic simple">
@@ -1671,7 +1670,7 @@ feature using the alpha values and sets the image result.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.play_pause_video">
-<span class="sig-name descname"><span class="pre">play_pause_video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.play_pause_video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.play_pause_video" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">play_pause_video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.play_pause_video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.play_pause_video" title="Permalink to this definition"></a></dt>
 <dd><p>Toggle between playing and pausing the video.</p>
 <p>If the video player timer is currently active, this method will pause the video. If the timer is not active,
 the method will resume playing the video. Additionally, if the video player was previously displaying a saved
@@ -1688,7 +1687,7 @@ image, the method will reset the player to resume playing the video.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.stop_video">
-<span class="sig-name descname"><span class="pre">stop_video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.stop_video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.stop_video" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">stop_video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.stop_video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.stop_video" title="Permalink to this definition"></a></dt>
 <dd><p>Stop playing the video.</p>
 <p>If the video capture object is not None and the video is currently playing, this method will:</p>
 <ol class="arabic simple">
@@ -1709,7 +1708,7 @@ image, the method will reset the player to resume playing the video.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.rewind_video_5_second">
-<span class="sig-name descname"><span class="pre">rewind_video_5_second</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.rewind_video_5_second"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.rewind_video_5_second" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">rewind_video_5_second</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.rewind_video_5_second"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.rewind_video_5_second" title="Permalink to this definition"></a></dt>
 <dd><p>Rewinds a video by 5 seconds from the current position.</p>
 <p>If a video is loaded, this function calculates the position of the video 5 seconds before the current position,
 and updates the video to that position. If the calculated position is before the beginning of the video, the
@@ -1726,7 +1725,7 @@ function sets the video to the first frame. If no video is loaded, the function 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.forward_video_5_second">
-<span class="sig-name descname"><span class="pre">forward_video_5_second</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.forward_video_5_second"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.forward_video_5_second" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">forward_video_5_second</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.forward_video_5_second"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.forward_video_5_second" title="Permalink to this definition"></a></dt>
 <dd><p>Updates the position of a video based on the value of a slider widget.</p>
 <p>If a video is loaded, this function calculates the frame number corresponding to the value of a slider widget
 as a percentage of the total duration, and updates the video to that frame. If no video is loaded, the function
@@ -1746,12 +1745,12 @@ does nothing.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.slider_controller">
-<span class="sig-name descname"><span class="pre">slider_controller</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.slider_controller"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.slider_controller" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">slider_controller</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.slider_controller"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.slider_controller" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.set_slider_video_time_position">
-<span class="sig-name descname"><span class="pre">set_slider_video_time_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.set_slider_video_time_position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_slider_video_time_position" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">set_slider_video_time_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.set_slider_video_time_position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.set_slider_video_time_position" title="Permalink to this definition"></a></dt>
 <dd><p>Sets the value of a slider widget based on the current position of a video.</p>
 <p>If a video is loaded, this function calculates the current time position as a percentage of the total duration
 and emits a signal with the corresponding value to update a slider widget. If no video is loaded, the function
@@ -1768,7 +1767,7 @@ does nothing.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.clear_saved_image">
-<span class="sig-name descname"><span class="pre">clear_saved_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.clear_saved_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.clear_saved_image" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">clear_saved_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.clear_saved_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.clear_saved_image" title="Permalink to this definition"></a></dt>
 <dd><p>Clear the saved image data from the configuration view and save the updated configuration to a file.</p>
 <p>This method removes all saved image data from the configuration view and updates the configuration file with the
 modified view.</p>
@@ -1787,7 +1786,7 @@ modified view.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.reset_config">
-<span class="sig-name descname"><span class="pre">reset_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.reset_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.reset_config" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">reset_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.reset_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.reset_config" title="Permalink to this definition"></a></dt>
 <dd><p>Resets the configuration view to its default values.</p>
 <p>This function sets all the fields of the configuration view to their default values,
 and saves the new configuration to the config file.</p>
@@ -1806,7 +1805,7 @@ and saves the new configuration to the config file.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.github_information">
-<span class="sig-name descname"><span class="pre">github_information</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.github_information"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.github_information" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">github_information</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.github_information"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.github_information" title="Permalink to this definition"></a></dt>
 <dd><p>Fetches information about the GitHub repository.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1833,7 +1832,7 @@ and saves the new configuration to the config file.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.refresh_github_information">
-<span class="sig-name descname"><span class="pre">refresh_github_information</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.refresh_github_information"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.refresh_github_information" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">refresh_github_information</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.refresh_github_information"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.refresh_github_information" title="Permalink to this definition"></a></dt>
 <dd><p>Refreshes the GitHub repository information and emits the updated configuration.</p>
 <p>Reads the cached GitHub configuration from the file system and updates it with the latest
 information from the remote repository. The list of branches is obtained from the repository,
@@ -1849,7 +1848,7 @@ configuration is emitted using the <cite>git_repository_info</cite> signal.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="models.model_apps.ModelApps.change_config_github">
-<span class="sig-name descname"><span class="pre">change_config_github</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">branch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/models/model_apps.html#ModelApps.change_config_github"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.change_config_github" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_config_github</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">branch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="v40_modules/models/model_apps.html#ModelApps.change_config_github"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#models.model_apps.ModelApps.change_config_github" title="Permalink to this definition"></a></dt>
 <dd><p>Change the configuration for the GitHub repository.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1890,7 +1889,7 @@ with the updated configuration.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Perseverance Technology, Taiwan.</p>
+    <p>&#169; Copyright 2022, Perseverance Technology, Taiwan.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

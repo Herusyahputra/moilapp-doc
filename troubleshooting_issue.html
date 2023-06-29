@@ -4,17 +4,17 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Troubleshooting Problems &mdash; MoilApp Documentation 4.1 documentation</title>
-      <link rel="stylesheet" href="static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <title>Troubleshooting an Issue &mdash; MoilApp Documentation 1.0 documentation</title>
+      <link rel="stylesheet" href="v40_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="v40_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
-    <script src="static/js/html5shiv.min.js"></script>
+    <script src="v40_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="static/documentation_options.js"></script>
-        <script src="static/doctools.js"></script>
-        <script src="static/sphinx_highlight.js"></script>
-    <script src="static/js/theme.js"></script>
+        <script data-url_root="./" id="documentation_options" src="v40_static/documentation_options.js"></script>
+        <script src="v40_static/doctools.js"></script>
+        <script src="v40_static/sphinx_highlight.js"></script>
+    <script src="v40_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Plugin Extention" href="plugin_extention.html" /> 
@@ -30,7 +30,7 @@
           
           <a href="index.html">
             
-              <img src="static/light-moilapp.png" class="logo" alt="Logo"/>
+              <img src="v40_static/light-moilapp.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -47,7 +47,7 @@
 
   /* Additional styles for the form */
   select {
-    width: 40%;
+    width: 100%;
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -62,10 +62,10 @@
 <!--<h3>Choice Version</h3>-->
 <form id="myForm">
   <select name="cars" id="cars" onchange="redirectToPage()">
-    <option value="moilapp-v1">Moilapp-V1</option>
-    <option value="moilapp-v2">Moilapp-V2</option>
-    <option value="moilapp-v3">Moilapp-V3</option>
-    <option value="moilapp-v4.0">Moilapp-V4.0</option>
+    <option value="moilapp-v1.0">Moilapp-V1.0</option>
+    <option value="moilapp-v2.0">Moilapp-V2.0</option>
+    <option value="moilapp-v3.0">Moilapp-V3.0</option>
+    <option selected="selected" value="moilapp-v4.0">Moilapp-V4.0</option>
     <option value="moilapp-v4.1">Moilapp-V4.1</option>
   </select>
 </form>
@@ -75,17 +75,17 @@
     var selectedOption = document.getElementById("cars").value;
 
     switch (selectedOption) {
-      case "moilapp-v1":
-        window.location.href = "moilapp-v1.0/v10_index.html";
+      case "moilapp-v1.0":
+        window.location.href = "moilapp-v1.0/index.html";
         break;
-      case "moilapp-v2":
-        window.location.href = "moilapp-v2.0/v20_index.html";
+      case "moilapp-v2.0":
+        window.location.href = "moilapp-v2.0/index.html";
         break;
-      case "moilapp-v3":
-        window.location.href = "moilapp-v3.0/v30_index.html";
+      case "moilapp-v3.0":
+        window.location.href = "moilapp-v3.0/index.html";
         break;
       case "moilapp-v4.0":
-        window.location.href = "moilapp-v4.0/v40_index.html";
+        window.location.href = "moilapp-v4.0/index.html";
         break;
       case "moilapp-v4.1":
         window.location.href = "index.html";
@@ -93,6 +93,8 @@
     }
   }
 </script>
+
+
 
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
@@ -105,7 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api_reference.html">API References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">MoilApp of Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plugin_extention.html">Plugin Extention</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="troubleshooting_issue.html">Troubleshooting Problems</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="troubleshooting_issue.html">Troubleshooting an Issue</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#application-installation">Application Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#screen-recording-on-application">Screen Recording on Application</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#python-h-missing-on-python-dev">Python.h Missing on Python-dev</a></li>
@@ -132,7 +134,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Troubleshooting Problems</li>
+      <li class="breadcrumb-item active">Troubleshooting an Issue</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -141,8 +143,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="troubleshooting-problems">
-<h1>Troubleshooting Problems<a class="headerlink" href="#troubleshooting-problems" title="Permalink to this heading"></a></h1>
+  <section id="troubleshooting-an-issue">
+<h1>Troubleshooting an Issue<a class="headerlink" href="#troubleshooting-an-issue" title="Permalink to this heading"></a></h1>
 <p style="text-align: justify;">
 
  When using any application, it's possible to encounter issues or problems that can prevent it from functioning as intended.
@@ -156,13 +158,13 @@
 
  If you encounter problems with some libraries <i>(requirements.txt)</i>, such as some libraries that cannot be installed on
  the computer, as shown in the image below:</p><figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="images/pyqt6.png"><img alt="alternate text" src="images/pyqt6.png" style="width: 743.4px; height: 183.0px;" /></a>
+<a class="reference internal image-reference" href="v40_images/pyqt6.png"><img alt="alternate text" src="v40_images/pyqt6.png" style="width: 743.4px; height: 183.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">PyQt6 cannot installation</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="images/sphinx_rtd_theme.png"><img alt="alternate text" src="images/sphinx_rtd_theme.png" style="width: 723.2px; height: 124.80000000000001px;" /></a>
+<a class="reference internal image-reference" href="v40_images/sphinx_rtd_theme.png"><img alt="alternate text" src="v40_images/sphinx_rtd_theme.png" style="width: 723.2px; height: 124.80000000000001px;" /></a>
 <figcaption>
 <p><span class="caption-text">Sphinx-rtd-theme incompatible (Theme)</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
@@ -185,7 +187,7 @@
 
  That is a difficulty when utilizing MoilApp screen recording functions because the captured video can only be seen as a
  black screen and cannot be played back caused by the type system protocol. You may fix it, though, by following the instructions below.</p><figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="images/wayland.png"><img alt="alternate text" src="images/wayland.png" style="width: 433.2px; height: 73.2px;" /></a>
+<a class="reference internal image-reference" href="v40_images/wayland.png"><img alt="alternate text" src="v40_images/wayland.png" style="width: 433.2px; height: 73.2px;" /></a>
 <figcaption>
 <p><span class="caption-text">Wayland type screen</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
@@ -195,7 +197,7 @@
 </pre></div>
 </div>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="images/custom_config.png"><img alt="alternate text" src="images/custom_config.png" style="width: 441.59999999999997px; height: 81.0px;" /></a>
+<a class="reference internal image-reference" href="v40_images/custom_config.png"><img alt="alternate text" src="v40_images/custom_config.png" style="width: 441.59999999999997px; height: 81.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">open configuration</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
@@ -205,13 +207,13 @@
 </pre></div>
 </div>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="images/change_type.png"><img alt="alternate text" src="images/change_type.png" style="width: 679.1999999999999px; height: 271.8px;" /></a>
+<a class="reference internal image-reference" href="v40_images/change_type.png"><img alt="alternate text" src="v40_images/change_type.png" style="width: 679.1999999999999px; height: 271.8px;" /></a>
 <figcaption>
 <p><span class="caption-text">Change to waylandEnable=False</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="images/restart.png"><img alt="alternate text" src="images/restart.png" style="width: 441.0px; height: 85.2px;" /></a>
+<a class="reference internal image-reference" href="v40_images/restart.png"><img alt="alternate text" src="v40_images/restart.png" style="width: 441.0px; height: 85.2px;" /></a>
 <figcaption>
 <p><span class="caption-text">Restart your computer</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
@@ -240,7 +242,7 @@
 </pre></div>
 </div>
 <figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="images/python_dev.png"><img alt="alternate text" src="images/python_dev.png" style="width: 776.4px; height: 127.19999999999999px;" /></a>
+<a class="reference internal image-reference" href="v40_images/python_dev.png"><img alt="alternate text" src="v40_images/python_dev.png" style="width: 776.4px; height: 127.19999999999999px;" /></a>
 <figcaption>
 <p><span class="caption-text">Python-dev installed based on version</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
@@ -253,7 +255,7 @@
  Difficulty in accessing the <i>MoilApp documentation</i> in PDF format is a common issue encountered by users. This is often
  caused by errors that occur during the initial conversion of the documentation to HTML. To resolve this issue. Please
  endure that you follow the instructions carefully.</p><figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="images/sphinx_PDF.png"><img alt="alternate text" src="images/sphinx_PDF.png" style="width: 437.4px; height: 160.79999999999998px;" /></a>
+<a class="reference internal image-reference" href="v40_images/sphinx_PDF.png"><img alt="alternate text" src="v40_images/sphinx_PDF.png" style="width: 437.4px; height: 160.79999999999998px;" /></a>
 <figcaption>
 <p><span class="caption-text">Convert rst file to html file</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
@@ -285,7 +287,7 @@
 
  You cannot update the application when an update notification is there when you establish a new branch and add some
  functions or alter the source code. You will encounter an error and a dump if you try this.</p<figure class="align-center" id="id9">
-<a class="reference internal image-reference" href="images/change_branch.png"><img alt="alternate text" src="images/change_branch.png" style="width: 616.8px; height: 155.4px;" /></a>
+<a class="reference internal image-reference" href="v40_images/change_branch.png"><img alt="alternate text" src="v40_images/change_branch.png" style="width: 616.8px; height: 155.4px;" /></a>
 <figcaption>
 <p><span class="caption-text">check for update on local branch</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
@@ -325,7 +327,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Perseverance Technology, Taiwan.</p>
+    <p>&#169; Copyright 2022, Perseverance Technology, Taiwan.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
